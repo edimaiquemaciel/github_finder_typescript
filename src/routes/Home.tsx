@@ -16,7 +16,7 @@ export default function Home() {
         setIsLoading(true);
         setUser(null);
         setErro(false);
-        const res = await fetch(`http://api.github.com/users/${userName}`);
+        const res = await fetch(`https://api.github.com/users/${userName}`);
 
         const data = await res.json();
 
